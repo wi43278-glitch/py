@@ -1,0 +1,25 @@
+# 디폴트 매개변수
+
+def greet(name, msg='안녕'):
+    print(name,msg)
+
+greet('더조은','좋은하루')
+greet('더조은')
+
+def greet2(name, age, class1='704', aa='oooo'):
+    print(name,age,class1, aa)
+
+greet2('파이썬','34')
+
+
+# 가변객체 사용시 None 사용
+def welcome2(city, name='Guest', room=None):
+    if room == None:
+        room = 1001
+    print(f' Hello {name}, This is {city}. You can use {room}')
+
+welcome2('Seoul')
+welcome2('Seloul', '더조은', [1002, 1003, 1007])
+
+
+
